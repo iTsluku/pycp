@@ -44,4 +44,4 @@ class TestCompetitiveProgrammingInput(unittest.TestCase):
     def test_multiple_int_with_maxsplit(self, mock_input):
         mock_input.return_value = "7 3 2"
         with self.assertRaises(ValueError):
-            multiple_int = cpin.mi(maxsplit=1)
+            cpin.mi(maxsplit=1)
